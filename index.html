@@ -44,9 +44,9 @@
                 </button>
             </div>
             <ul class="menu-list flex gap-x-12 text-gray-500 ">
-                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="./index.html">Home</a></li>
-                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="#shop">Shop</a></li>
-                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="#about-us">About Us</a></li>
+                <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="./index.html">Home</a></li>
+                <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="shop.html">Shop</a></li>
+                <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="about-us.html">About Us</a></li>
                 <li class="menu-item text-black"><a href="#about-us"><img class="w-[22px] mr-2 inline" src="./images/icon-shopping-cart.svg" alt="shopping-cart"> Cart ($56)</a></li>
             </ul>
         </nav>
@@ -131,6 +131,30 @@
                 <img src="./images/trusted-badge.png" alt="trusted-badge" class="trusted-badge absolute top-[-130px] left-[22.5rem] hidden lg:block w-[286px] h-auto animate-[spin_15s_linear_infinite]">
             </div>
         </section>
+
+
+        <!-- Section: Latest Deals -->
+        <section id="latest-deals" class="latest-deals-section py-16">
+            <div class="container max-w-[1150px] mx-auto px-[15px]">
+                <h2 class="section-title font-noto font-bold text-[50px] text-center mb-4"><span class="text-[#E95A08]">Latest</span> Deals</h2>
+                <p class="section-description font-inter text-[14px] lg:text-[22px] text-black/50 text-center max-w-4xl mx-auto mb-10">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <div class="deals-grid grid grid-flow-col grid-rows-2 gap-x-5 gap-y-[30px] text-white">
+                    <div class="deal-item col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20  flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-bloom.png');">
+                        <h3 class="deal-name font-bold text-xl text-center">60% Off | Bloom Plant</h3>
+                        <a href="shop.html" class="underline font-inter font-semibold text-[16px]">Shop Now</a>
+                    </div>
+                    <div class="deal-item col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20  flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-ana.png');">
+                        <h3 class="deal-name font-noto font-bold text-xl text-center">30% Off | Ana  Plant</h3>
+                        <a href="shop.html" class="underline font-inter font-semibold text-[16px]">Shop Now</a>
+                    </div>
+                    <div class="deal-item row-span-2 rounded-[22px] col-span-2 text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20 flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-zabo.png');">
+                        <h3 class="deal-name font-noto font-bold text-[40px] text-center">25% Off | Zabo Plant</h3>
+                        <a href="shop.html" class="underline font-inter font-semibold text-[28px]">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Section: Subscribe -->
         <section class="subscribe-section bg-[url(./images/news-letter-bg.png)] bg-no-repeat bg-cover bg-center">
