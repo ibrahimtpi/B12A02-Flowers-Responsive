@@ -32,28 +32,32 @@
 </head>
 <body class="bg-offwhite">
     <header class="site-header">
-        <nav class="main-menu container max-w-[1150px] mx-auto flex justify-between items-center pt-[30px] pb-8">
-            <div class="logo">
+        <nav class="main-menu container max-w-[1150px] mx-auto flex justify-between items-center pt-[30px] pb-8 px-4 xl:px-0">
+            <!-- Logo -->
+            <div class="logo w-[63px] md:w-auto">
                 <a href="./index.html" class="logo-link">
                     <img src="./images/logo.png" alt="Logo" class="logo-image">
                 </a>
             </div>
-            <div class="menu-toggle">
-                <button class="toggle-button">
-                    <span class="toggle-icon"></span>
-                </button>
-            </div>
-            <ul class="menu-list flex gap-x-12 text-gray-500 ">
+            
+            <!-- Desktop Menu -->
+            <ul class="menu-list hidden md:flex gap-x-12 text-gray-500 ml-auto mr-12">
                 <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="./index.html">Home</a></li>
                 <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="shop.html">Shop</a></li>
                 <li class="menu-item active:text-black active:font-bold hover:text-black duration-300 ease-in-out"><a href="about-us.html">About Us</a></li>
-                <li class="menu-item text-black"><a href="#about-us"><img class="w-[22px] mr-2 inline" src="./images/icon-shopping-cart.svg" alt="shopping-cart"> Cart ($56)</a></li>
             </ul>
+
+            <!-- Cart Icon -->
+            <div class="cart-icon">
+                <a href="#"><img class="w-[22px] mr-2 inline" src="./images/icon-shopping-cart.svg" alt="shopping-cart"> Cart ($56)</a>
+            </div>
         </nav>
+
+        <!-- Hero Banner -->
         <div class="banner container max-w-[1150px] mx-auto flex flex-col lg:flex-row items-end justify-between pt-12 pb-16">
-            <img src="./images/hero-flower.png" alt="Hero Image" class="hero-image w-full h-auto flex-1 lg:order-2 mb-7">
+            <img src="./images/hero-flower.png" alt="Hero Image" class="hero-image w-full h-auto flex-1 lg:order-2 mb-7 lg:mb-0">
             <div class="banner-content px-[15px] xl:px-0 flex-1">
-                <h1 class="banner-title font-noto font-bold text-2xl lg:text-[65px]/[130%] mb-3">ALWAYS <span class="text-orange-500">FRESH <br>FLOWERS</span></h1>
+                <h1 class="banner-title font-noto font-bold text-2xl md:text-5xl xl:text-[65px]/[130%] mb-3">ALWAYS <span class="text-orange-500">FRESH <br>FLOWERS</span></h1>
                 <p class="banner-subtitle text-[14px] lg:text-[22px] font-inter text-black/50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
             </div>
         </div>
@@ -64,49 +68,49 @@
             <h2 class="section-title font-noto font-bold text-[50px] text-center hidden md:block mb-4"><span class="text-[#E95A08]">Our</span> Plants</h2>
             <p class="section-description font-inter text-[14px] lg:text-[22px] text-black/50 text-center max-w-4xl mx-auto mb-10">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             <div class="product-grid grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-[30px]">
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
                     <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
-                <div class="product-item font-inter text-[22px] text-[#111111]">
+                <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
@@ -117,18 +121,18 @@
 
 
         <!-- Section: Flower Lover -->
-        <section id="flower-lover" class="flower-lover-section py-16">
+        <section id="flower-lover" class="flower-lover-section pt-6 md:pt-32 pb-6 md:pb-12">
             <div class="container relative max-w-[1150px] mx-auto flex flex-col md:flex-row items-center gap-x-[60px] px-[15px]">
                 <img src="./images/flower-store.png" alt="Flower Store" class="flower-store flex-1 w-full h-auto mb-4 lg:mb-0">
                 <div class="flower-lover-content flex-1">
                     <h2 class="flower-lover-title font-noto font-bold text-[24px] lg:text-[50px] mb-4">Flower & Plants Lover</h2>
-                    <ul class="flower-lover-description list-disc font-inter text-[14px] lg:text-[22px] text-black/50 pl-5 lg:pl-7">
+                    <ul class="flower-lover-description flex flex-col gap-y-3 list-disc font-inter text-[14px] lg:text-[22px] text-black/50 pl-5 lg:pl-7">
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                     </ul>
                 </div>
-                <img src="./images/trusted-badge.png" alt="trusted-badge" class="trusted-badge absolute top-[-130px] left-[22.5rem] hidden lg:block w-[286px] h-auto animate-[spin_15s_linear_infinite]">
+                <img src="./images/trusted-badge.png" alt="trusted-badge" class="trusted-badge absolute top-[-100px] left-[36%] xl:top-[-130px] xl:left-[22.5rem] hidden lg:block w-[200px] xl:w-[286px] h-auto animate-[spin_15s_linear_infinite]">
             </div>
         </section>
 
@@ -136,20 +140,20 @@
         <!-- Section: Latest Deals -->
         <section id="latest-deals" class="latest-deals-section py-16">
             <div class="container max-w-[1150px] mx-auto px-[15px]">
-                <h2 class="section-title font-noto font-bold text-[50px] text-center mb-4"><span class="text-[#E95A08]">Latest</span> Deals</h2>
-                <p class="section-description font-inter text-[14px] lg:text-[22px] text-black/50 text-center max-w-4xl mx-auto mb-10">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-                <div class="deals-grid grid grid-flow-col grid-rows-2 gap-x-5 gap-y-[30px] text-white">
-                    <div class="deal-item col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20  flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-bloom.png');">
+                <h2 class="section-title font-noto font-bold text-[24px] md:text-[50px] text-center mb-4"><span class="text-[#E95A08]">Latest</span> Deals</h2>
+                <p class="section-description font-inter text-[14px] lg:text-[22px] text-black/50 text-center max-w-4xl mx-auto mb-10 px-5">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <div class="deals-grid grid md:grid-flow-col grid-rows-3 md:grid-rows-2 gap-x-5 gap-y-[30px] text-white">
+                    <div class="deal-item md:col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20 h-[180px] md:h-auto flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-bloom.png');">
                         <h3 class="deal-name font-bold text-xl text-center">60% Off | Bloom Plant</h3>
                         <a href="shop.html" class="underline font-inter font-semibold text-[16px]">Shop Now</a>
                     </div>
-                    <div class="deal-item col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20  flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-ana.png');">
+                    <div class="deal-item md:col-span-1 rounded-[14px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20 h-[180px] md:h-auto flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-ana.png');">
                         <h3 class="deal-name font-noto font-bold text-xl text-center">30% Off | Ana  Plant</h3>
                         <a href="shop.html" class="underline font-inter font-semibold text-[16px]">Shop Now</a>
                     </div>
-                    <div class="deal-item row-span-2 rounded-[22px] col-span-2 text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20 flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-zabo.png');">
-                        <h3 class="deal-name font-noto font-bold text-[40px] text-center">25% Off | Zabo Plant</h3>
-                        <a href="shop.html" class="underline font-inter font-semibold text-[28px]">Shop Now</a>
+                    <div class="deal-item md:row-span-2 md:col-span-2 rounded-[22px] text-center text-[22px] text-white bg-no-repeat bg-cover bg-center p-20 h-[180px] md:h-auto flex flex-col align-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/deal-zabo.png');">
+                        <h3 class="deal-name font-noto font-bold text-[22px] md:text-[40px] text-center">25% Off | Zabo Plant</h3>
+                        <a href="shop.html" class="underline font-inter font-semibold text-[16px] md:text-[28px]">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -158,11 +162,11 @@
 
         <!-- Section: Subscribe -->
         <section class="subscribe-section bg-[url(./images/news-letter-bg.png)] bg-no-repeat bg-cover bg-center">
-            <div class="container max-w-[1150px] mx-auto px-[15px] py-56">
-                <h2 class="subscribe-title text-[50px] text-center text-white font-noto">Join the colorful Bunch</h2>
-                <form class="subscribe-form flex flex-col lg:flex-row gap-4 mt-4">
-                    <input type="email" placeholder="Write email" class="subscribe-input flex-1 p-2 border border-gray-300 rounded-lg">
-                    <button type="submit" class="subscribe-button bg-blue-500 text-white px-6 py-2 rounded-lg">Subscribe</button>
+            <div class="container max-w-[830px] mx-auto px-[36px] md:px-[15px] pt-32 md:pt-56 pb-20 md:pb-56">
+                <h2 class="subscribe-title font-noto font-bold text-[20px] xl:text-[50px] text-center text-white">Join the colorful Bunch</h2>
+                <form class="subscribe-form flex mt-4">
+                    <input type="email" placeholder="Write email" class="subscribe-input flex-1 py-2 px-5 h-[50px] border border-gray-300">
+                    <button type="submit" class="subscribe-button bg-[#E95A08] text-white px-6 py-2 h-[50px]">Subscribe</button>
                 </form>
             </div>
         </section>
