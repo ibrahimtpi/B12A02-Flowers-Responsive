@@ -72,49 +72,49 @@
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
                 <div class="product-item font-inter text-[16px] md:text-[22px] text-[#111111]">
                     <img src="./images/sample-flower-image.png" alt="Product 1" class="product-image w-full h-auto mb-4">
                     <h3 class="product-name font-medium text-center">Lily Blossom</h3>
                     <p class="product-price font-bold text-center mb-5">20 <span class="cur">USD</span></p>
-                    <button class="uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
+                    <button class="add-to-cart uppercase text-white text-[16px] font-semibold w-full bg-[#E95A08] py-3">ADD TO CART</button>
                 </div>
             </div>
         </section>
@@ -199,5 +199,14 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const addToCart = document.querySelectorAll('.add-to-cart');
+        addToCart.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Flower Added to Cart'); 
+            });
+        });
+    </script>
 </body>
 </html>
