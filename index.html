@@ -12,22 +12,27 @@
         tailwind.config = {
         theme: {
             extend: {
-            fontFamily: {
-                inter : ["Inter", 'sans-serif'],
-                noto: ['"Noto Serif"', 'serif'],
-            }
+                fontFamily: {
+                    inter : ["Inter", 'sans-serif'],
+                    noto: ['"Noto Serif"', 'serif'],
+                },
+                colors: {
+                    'offwhite': '#F5F8FF',
+                    'white': '#FFFFFF',
+                    'black/50': 'rgba(0, 0, 0, 0.5)',
+                },
             }
         }
         }
     </script>
 
 </head>
-<body>
+<body class="bg-offwhite">
     <header class="site-header">
-        <nav class="main-menu">
+        <nav class="main-menu container max-w-[1150px] mx-auto flex justify-between items-center pt-[30px] pb-8">
             <div class="logo">
-                <a href="#home" class="logo-link">
-                    <img src="https://via.placeholder.com/150" alt="Logo" class="logo-image">
+                <a href="./index.html" class="logo-link">
+                    <img src="./images/logo.png" alt="Logo" class="logo-image">
                 </a>
             </div>
             <div class="menu-toggle">
@@ -35,15 +40,19 @@
                     <span class="toggle-icon"></span>
                 </button>
             </div>
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#home">Home</a></li>
-                <li class="menu-item"><a href="#shop">Shop</a></li>
-                <li class="menu-item"><a href="#about-us">About Us</a></li>
+            <ul class="menu-list flex gap-x-12 text-gray-500 ">
+                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="./index.html">Home</a></li>
+                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="#shop">Shop</a></li>
+                <li class="menu-item active:text-black active:font-bold focus:text-black"><a href="#about-us">About Us</a></li>
+                <li class="menu-item text-black"><a href="#about-us"><img class="w-[22px] mr-2 inline" src="./images/icon-shopping-cart.svg" alt="shopping-cart"> Cart ($56)</a></li>
             </ul>
         </nav>
-        <div class="banner">             
-            <h1 class="banner-title text-3xl">ALWAYS FRESH FLOWERS</h1>
-            <p class="banner-subtitle text-2xl">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+        <div class="banner container max-w-[1150px] mx-auto flex flex-col lg:flex-row items-end justify-between pt-12 pb-16">
+            <img src="./images/hero-flower.png" alt="Hero Image" class="hero-image w-full h-auto flex-1 lg:order-2 mb-7">
+            <div class="banner-content px-[15px] xl:px-0 flex-1">
+                <h1 class="banner-title font-noto font-bold text-2xl lg:text-[65px]/[130%] mb-3">ALWAYS <span class="text-orange-500">FRESH <br>FLOWERS</span></h1>
+                <p class="banner-subtitle text-[14px] lg:text-[22px] font-inter text-black/50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+            </div>
         </div>
     </header>
     <main class="site-main">
@@ -59,7 +68,7 @@
             </div>
         </section>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer bg-white">
         <div class="container max-w-[1150px] mx-auto flex flex-col lg:flex-row gap-y-8 justify-between items-start px-[15px] py-[50px]">
             <div class="max-w-[359px] lg:flex-[359px] lg:mr-[100px]">
                 <a href="./index.html"><img src="./images/logo.png" alt="footer logo" class="footer-logo mb-4"></a>
